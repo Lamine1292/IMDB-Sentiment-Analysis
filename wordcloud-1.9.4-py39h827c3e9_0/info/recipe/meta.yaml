@@ -1,0 +1,75 @@
+# This file created by conda-build 25.1.1
+# meta.yaml template originally from:
+# C:\b\abs_56dnt8thnj\clone\recipe, last modified Mon Feb  3 14:18:38 2025
+# ------------------------------------------------
+
+package:
+  name: wordcloud
+  version: 1.9.4
+source:
+  sha256: b273d8a5ded97d3ead904046b49464dcb71119ee79df875072a4c105cadd347a
+  url: https://pypi.io/packages/source/w/wordcloud/wordcloud-1.9.4.tar.gz
+build:
+  entry_points:
+    - wordcloud_cli = wordcloud.__main__:main
+  number: '0'
+  script: C:\\b\\abs_56dnt8thnj\\croot\\wordcloud_1738592331576\\_h_env\\python.exe
+    -m pip install . --no-deps --no-build-isolation -vv
+  string: py39h827c3e9_0
+requirements:
+  build:
+    - vs2019_win-64 19.29.30154 h96f319f_5
+    - vswhere 2.8.4 haa95532_0
+  host:
+    - ca-certificates 2024.12.31 haa95532_0
+    - cython 3.0.11 py39h827c3e9_1
+    - openssl 3.0.15 h827c3e9_0
+    - packaging 24.2 py39haa95532_0
+    - pip 25.0 py39haa95532_0
+    - python 3.9.21 h8205438_1
+    - setuptools 75.8.0 py39haa95532_0
+    - setuptools-scm 8.1.0 py39haa95532_0
+    - sqlite 3.45.3 h2bbff1b_0
+    - tomli 2.0.1 py39haa95532_0
+    - typing-extensions 4.12.2 py39haa95532_0
+    - typing_extensions 4.12.2 py39haa95532_0
+    - tzdata 2025a h04d1e81_0
+    - vc 14.40 haa95532_2
+    - vs2015_runtime 14.42.34433 h9531ae6_2
+    - wheel 0.45.1 py39haa95532_0
+  run:
+    - matplotlib-base
+    - numpy >=1.6.1
+    - pillow
+    - python >=3.9,<3.10.0a0
+    - vc >=14.2,<15.0a0
+    - vs2015_runtime >=14.29.30133,<15.0a0
+test:
+  commands:
+    - pip check
+    - wordcloud_cli -h
+  imports:
+    - wordcloud
+  requires:
+    - pip
+about:
+  description: 'A little word cloud generator in Python.
+
+    '
+  dev_url: https://github.com/amueller/word_cloud
+  doc_url: https://amueller.github.io/word_cloud/
+  home: https://github.com/amueller/word_cloud
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: A little word cloud generator in Python
+extra:
+  copy_test_source_files: true
+  final: true
+  flow_run_id: 56131818-57cf-434a-9f2c-1b37554567ff
+  recipe-maintainers:
+    - amueller
+    - ericdill
+    - ocefpaf
+  remote_url: git@github.com:AnacondaRecipes/wordcloud-feedstock.git
+  sha: 5e48df673e8f8aa86e7a74b825951d71364fd5e9
