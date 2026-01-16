@@ -17,3 +17,11 @@ datasets/
 cornellmovie_reviews.csv
 rotten_tomatoes_critic_reviews.csv
 IMDB Dataset.csv
+.venv/
+.idea/
+*.csv
+*.zip
+*.rar
+txt_sentoken2/
+wordcloud-1.9.4-py39h827c3e9_0/
+__pycache__/
