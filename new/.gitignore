@@ -5,3 +5,15 @@ __pycache__/
 *.pyd
 .ipynb_checkpoints/
 .env
+*.csv
+data/
+datasets/
+*.csv
+*.zip
+*.tar
+*.gz
+data/
+datasets/
+cornellmovie_reviews.csv
+rotten_tomatoes_critic_reviews.csv
+IMDB Dataset.csv
